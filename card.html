@@ -10,7 +10,7 @@
  <body>
  <!-- <audio controls>
   <source src="images/birthday.mp3" type="audio/mpeg" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-</audio> -->
+</audio> 
 <audio id="audio" autoplay
    preload:"auto"
    src="images/birthday.mp3" >
@@ -22,8 +22,15 @@
     this.currentTime = 03;
     this.play();
   });
-</script>
-    <div id="outside">
+</script> -->
+   <script>
+     
+var myAudio=document.getElementById('audio')
+// Seek to 10 seconds:
+myAudio.oncanplaythrough=setTimeout(function(){setTime()},500);
+function setTime(){myAudio.currentTime = 10; } 
+     </script>
+   <div id="outside">
          <p id="outside-title">
         <strong> This is a card for you.</strong>
        <br> Please wait 10 seconds before opening this card.
