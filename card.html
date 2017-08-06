@@ -11,15 +11,15 @@
  <!-- <audio controls>
   <source src="images/birthday.mp3" type="audio/mpeg" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
 </audio> -->
-<audio id="audio2" 
-   
+<audio id="audio" 
+   preload:"auto"
    src="images/birthday.mp3" >
 </audio>
 
 <script>
-  myAudio=document.getElementById('audio2');
+  myAudio=document.getElementById('audio');
   myAudio.addEventListener('canplaythrough', function() {
-    this.currentTime = 10;
+    this.currentTime = 03;
     this.play();
   });
 </script>
